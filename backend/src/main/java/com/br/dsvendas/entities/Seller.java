@@ -17,22 +17,19 @@ import lombok.Setter;
 
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter
+@Setter
 @Entity
 @Table(name = "tb_sellers")
 public class Seller{
-	
-	@Getter
-	@Setter	
+		
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	private long id;	
 	
 	@Getter
 	@Setter
-	private String Name;
-	
-	@Getter
-	@Setter
+	private String Name;	
 	@OneToMany(mappedBy = "seller")
 	private List<Sale> sales = new ArrayList<>();	
 }
