@@ -31,5 +31,5 @@ public class Seller{
 	@Setter
 	private String Name;	
 	@OneToMany(mappedBy = "seller")
-	private List<Sale> sales = new ArrayList<>();	
+	private final List<Sale> sales = new ArrayList<>();
 }
