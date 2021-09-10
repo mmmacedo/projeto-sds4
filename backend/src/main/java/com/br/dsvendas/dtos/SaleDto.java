@@ -6,13 +6,16 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class SaleDto {
+public class SaleDto implements Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private int visited;
     private int deals;
