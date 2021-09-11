@@ -9,8 +9,8 @@ import lombok.Setter;
 @Setter
 public class SaleSuccessDto {
 
-    private String selleName;
+    private String sellerName;
     private Long visited;
-    private Long deal;
+    private Long deals;
 
 }
